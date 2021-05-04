@@ -1,9 +1,5 @@
 .gradient-bg {
-  background-image: linear-gradient(
-    to top,
-    #30cfd0 0%,
-    #330867 100%
-  ) !important;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%) !important;
 }
 
 .purple-border {
@@ -18,11 +14,6 @@ a {
   display: none !important;
 }
 
-.drop-list-checkbox:checked + .summary {
-  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
-}
-
 .dropdown-content {
   margin-top: 0.8rem;
   padding: 0 0.8rem;
@@ -30,12 +21,19 @@ a {
 }
 
 .summary {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.15em;
   text-align: center;
   padding: 0.85rem !important;
   width: 100% !important;
-  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-    6px 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+}
+
+.drop-list-checkbox:checked + .summary {
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-section {
